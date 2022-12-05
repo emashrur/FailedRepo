@@ -1,9 +1,11 @@
 const { Given, When, Then } = require ("@wdio/cucumber-framework");
 const LoginPage = require('../../POM/FaceBook/LoginPage');
 const LoginErrorPage = require('../../POM/FaceBook/LoginErrorPage');
+const Commands = require("../../POM/Commands");
 
 const loginPage = new LoginPage();
 const errorPage = new LoginErrorPage();
+const commands = new Commands();
 /**
  * Glue Code : 
  * Glue code is a regular expression which helps to map Scenario-steps
@@ -31,18 +33,22 @@ When(/^I click login button$/, async function () {
     await loginPage.clickLoginButton();
 })
 
-When(/^I verify error is displayed$/, async function (username) {
+When(/^I verify error is displayed$/, async function () {
     await errorPage.isLoginErrorDisplayed();
 })
 
-When(/^I verify login email is enabled$/, async function () {
-
-})
-
-When(/^I verify login password is enabled$/, async function () {
-    
-})
-
-When(/^I verify the login button is enabled$/, async function () {
-    
+When(/^I verify login '.*' is enabled$/, async function (element) {
+    switch (element.toLowerCase()) {
+        case value: 'email'
+            await loginPage.isEmailFieldEnabled();
+            break;
+        case value: 'password'
+            await loginPage.isPassFieldEnabled();
+            break;
+        case value: 'button'
+            await loginPage.isLoginButtonEnabled();
+            break;
+        default:
+            break;
+    }
 })

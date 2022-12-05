@@ -63,14 +63,17 @@ class LoginPage {
         await this.commands.clickElement(this.metaPayLink);
     }
 
-    
+    async isEmailFieldEnabled () {
+        await this.commands.isElementEnabled(this.loginEmail);
+    }
 
-    
+    async isPassFieldEnabled () {
+        await this.commands.isElementEnabled(this.loginPassWord);
+    }    
 
-
-
-
-
+    async isLoginButtonEnabled () {
+        await this.commands.isElementEnabled(this.loginButton);
+    }
 
 }
 

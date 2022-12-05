@@ -55,6 +55,10 @@ class Commands {
         return await $(locator).isDisplayed();
     }
 
+    async isElementEnabled (locator) {
+        return await $(locator).isEnabled();
+    }
+
     async hoverMouse (locator) {
         await $(locator).moveTo()
     }
