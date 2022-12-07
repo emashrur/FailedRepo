@@ -1,0 +1,115 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670293678278' stop='1670293678279'>
+    <name>Login: Verify login fields are enabled</name>
+    <title>Login: Verify login fields are enabled</title>
+    <test-cases>
+        <test-case start='1670293678278' status='passed' stop='1670293678278'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.94'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1670293678278' status='pending' stop='1670293678279'>
+            <name>Given I am on facebook</name>
+            <title>Given I am on facebook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.94'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1670293678279' status='broken' stop='1670293678279'>
+            <name>Then I verify login email is enabled</name>
+            <title>Then I verify login email is enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.94'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "I verify login email is enabled" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I verify login email is enabled" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/elahi/Documents/git/JS-FALL-CUCUMBER-2022/features/Facebook/login.feature):1:1
+                	at Scenario(Verify login fields are enabled):11:5
+                	at Step(I verify login email is enabled):13:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1670293678279' status='broken' stop='1670293678279'>
+            <name>Then I verify login password is enabled</name>
+            <title>Then I verify login password is enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.94'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "I verify login password is enabled" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I verify login password is enabled" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/elahi/Documents/git/JS-FALL-CUCUMBER-2022/features/Facebook/login.feature):1:1
+                	at Scenario(Verify login fields are enabled):11:5
+                	at Step(I verify login password is enabled):14:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1670293678279' status='broken' stop='1670293678279'>
+            <name>Then I verify the login button is enabled</name>
+            <title>Then I verify the login button is enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.94'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "I verify the login button is enabled" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I verify the login button is enabled" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/elahi/Documents/git/JS-FALL-CUCUMBER-2022/features/Facebook/login.feature):1:1
+                	at Scenario(Verify login fields are enabled):11:5
+                	at Step(I verify the login button is enabled):15:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1670293678279' status='passed' stop='1670293678279'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.94'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

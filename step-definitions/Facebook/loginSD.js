@@ -15,7 +15,7 @@ Given (/^I am on facebook$/, async function () {
     await browser.pause(5000);
 })
 
-When(/^I type '.*' as '.*'$/, async function (data, fieldname) {
+When(/^I type "(.+)" as (username|password)$/, async function (data, fieldname) {
     switch (fieldname.toLowerCase()) {
         case value: 'username'
             await loginPage.emailField(data);
